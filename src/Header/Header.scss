@@ -1,0 +1,22 @@
+.Header .ml-auto{
+    margin-left: auto;
+}
+
+.instagram{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .instagram{
+        display:block;
+    }
+
+    // .Header{
+    //     position: sticky;
+    //     top: 0;
+    // }
+    .nav-container{
+        position: sticky;
+        top: 0;
+    }
+}

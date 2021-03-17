@@ -1,0 +1,63 @@
+.container-login{
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border: #9AB7D1 solid 2px;
+    border-radius: 5%;
+    padding: 20px;
+    background:#9AB7D1;
+    align-self: center;
+}
+.imput{
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 9px 5px;
+    border: #9AB7D1;
+}
+
+.photo-register{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container-login{
+        flex-flow: row nowrap;
+    }
+  .photo-register{
+      display: inline;
+      width: 400px;
+      min-height: 400px;
+  }
+  .login{
+      height: 535px;
+      width: 350px;
+      border-radius: 0%;
+      border-top-right-radius:5%;
+      border-bottom-right-radius:5%;
+     
+  }
+  .camera{
+      width: 400px;
+      height: 535px;
+      border-top-left-radius:5%;
+      border-bottom-left-radius:5%;
+     
+  }
+}
+
+@media (min-width: 1024px){
+  .login{
+     min-width: 400px;
+     min-height: 550px;
+  }
+
+  .camera{
+    min-height: 550px;
+  }
+}

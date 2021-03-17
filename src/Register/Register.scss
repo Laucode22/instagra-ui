@@ -1,0 +1,65 @@
+
+.container-register{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.register{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border: #c4bcad solid 2px;
+    border-radius: 5%;
+    padding: 20px;
+    background:#c4bcad;
+    align-self: center;
+    
+}
+title{
+    text-align: start;
+}
+.photo-register{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container-register{
+        flex-flow: row nowrap;
+    }
+  .photo-register{
+      display: inline;
+      width: 400px;
+      min-height: 400px;
+  }
+  .register{
+      height: 535px;
+      width: 350px;
+      border-radius: 0%;
+      border-top-right-radius:5%;
+      border-bottom-right-radius:5%;
+     
+  }
+  .camera{
+      width: 400px;
+      height: 535px;
+      border-top-left-radius:5%;
+      border-bottom-left-radius:5%;
+     
+  }
+}
+
+@media (min-width: 1024px){
+  .register{
+     min-width: 400px;
+     min-height: 550px;
+  }
+
+  .camera{
+    min-height: 550px;
+  }
+}
